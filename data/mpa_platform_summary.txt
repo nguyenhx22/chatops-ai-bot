@@ -1,0 +1,27 @@
+The MPA Lifecycle feature manages gateway activation and lifecycle events through multiple services, including event translation, configuration management, event processing, and lifecycle retries.
+
+Lifecycle Management:
+
+- Supports XFI Lifecycle - Gateway and Account Lifecycle Handoff processes.
+- Relies on SNS notifications to trigger lifecycle events, ensuring xFi systems remain synchronized.
+- Handles account and device lifecycle transitions, enabling/disabling capabilities as needed.
+- Future enhancements include replacing event processors with step functions and deprecating legacy SQS queues.
+
+Lifecycle Event Processing Repositories:
+
+- Functional test repositories for lifecycle event validation.
+- Terraform definitions for infrastructure, including API Gateways and ECS clusters.
+- Microservices for config set management and device lifecycle handling.
+
+Additional Enhancements:
+
+- The MPA Lifecycle Platform architecture outlines a migration plan for lifecycle processes, particularly for ORC accounts.
+- A sequence diagram maps the account product lifecycle for partners.
+- Future improvements will refine event handling, configuration management, and cloud infrastructure.
+
+Integration:
+
+- Integrated with ELK for logging.
+- Uses the sfa_mpa_service_account client for log retrieval via https://cl-elk.eaas.comcast.net.
+
+This update provides a structured overview of MPA’s lifecycle event handling, integrating logging, lifecycle transitions, infrastructure, and planned architectural enhancements.

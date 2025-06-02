@@ -1,0 +1,14 @@
+---
+applications:
+  - name: chatops-ai-bot
+    memory: 512M
+    disk_quota: 2G
+    instances: 1  
+    buildpack: python_buildpack
+    host: chatops-ui-int
+    services:
+      - chatops-proxy-int    
+    env:
+      PYTHONUNBUFFERED: "1"
+      PIPENV_VENV_IN_PROJECT: "1"
+    command: streamlit run app.py --server.port $PORT --server.address 0.0.0.0

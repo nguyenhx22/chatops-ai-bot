@@ -1,0 +1,14 @@
+pip install streamlit==1.44.1
+pip install requests==2.32.3
+pip install python-dotenv==1.1.0
+pip install structlog==25.2.0
+pip install pydantic-settings==2.8.1
+pip install langchain==0.3.23
+pip install langchain-groq==0.3.2
+pip install langchain-openai==0.3.12
+pip install langchain-community==0.3.21
+pip install fastapi==0.115.12
+pip install uvicorn==0.34.0
+pip install PyJWT==2.10.1
+pip install cryptography==44.0.2
+pip install psycopg2-binary==2.9.10
